@@ -24,6 +24,13 @@ unsigned long long count_chars_printable(const byte *buff){
     return count;
 }
 
+unsigned long long count_chars_graphical(const byte *buff){
+    unsigned long long count = 0;
+    for(int i = 0; i < len(buff); i++)
+        count += 32 < buff[i] && buff[i] < 126 ? 1 : 0;
+    return count;
+}
+
 unsigned long long count_chars_no_space(const byte *buff){
     unsigned long long count = 0;
     for(int i = 0; i < len(buff); i++){

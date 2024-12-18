@@ -30,7 +30,7 @@ int main(int argc, byte **argv){
     build_string(argc, argv, buff);
     printf("built %s\n", buff);
 
-    printf("%llu\n", count_words(buff));
-
+    printf("words: %llu\n", count_words(buff));
+    printf("characters: %llu\n", count_chars_graphical(buff));
 
 }
