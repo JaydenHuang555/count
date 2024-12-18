@@ -8,5 +8,5 @@ all:
 debug:
 	$(call compile, $(NAME)-dbg, -g)
 clean:
-	rm -rf $(NAME)
+	rm -rf $(NAME) $(NAME)-dbg
 
