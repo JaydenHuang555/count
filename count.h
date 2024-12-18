@@ -3,6 +3,8 @@
 #include "common.h"
 
 
-extern unsigned long long count_words(const byte *buff);
+extern unsigned long long count_words(const byte*);
+
+extern unsigned long long count_chars_printable(const byte*);
 
 #endif 
